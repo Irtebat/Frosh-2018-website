@@ -1,0 +1,167 @@
+#about{
+    background-color:#000;
+    overflow: hidden;
+    height:90%;
+}
+
+/* Final Property on scrolling */
+
+.show{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+#about .heading{
+    position: absolute;
+    Font-size:70px;
+    text-align:center;
+    top: 12%;
+    font-family: 'Righteous', cursive;
+    color:#fb6e14;
+    opacity: 0;
+    transform: translateY(-40px);
+    transition: all 1.5s ease;
+}
+
+#about .txt{
+    position: absolute;
+    width:60%;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Hind Madurai', sans-serif;
+    top:28%;
+    margin-top:0px;
+    color:#fff;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 1s ease;
+}
+#about .txt p{
+margin-bottom: 30px;
+}
+/* Par Icon */
+
+.par_icon{
+    position: absolute;
+    height: 220.824px;
+    width: 173.449px;
+    background-image: url(../img/par/par_icon_b_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom:0%;
+    left:1%;
+    transition: all 0s ease;
+  }
+  
+.par_icon_2{
+    position: absolute;
+    height: 220.824px;
+    width: 173.449px;
+    background-image: url(../img/par/par_icon_g_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom:0%;
+    right:1%;
+    transition: all 0s ease;
+  }
+
+  @media only screen and (max-width: 1400px) {
+
+    #about .heading{
+        Font-size:65px;
+        top: 12%;
+    }
+    
+    #about .txt{
+        Font-size:18px;
+        top: 28%;
+    }
+
+    .par_icon{
+        height: 184.02px;
+        width: 144.541px;
+      }
+      
+    .par_icon_2{
+        height: 184.02px;
+        width: 144.541px;
+      }
+
+
+  }
+
+  @media only screen and (max-width: 1000px) {
+
+    #about .heading{
+        Font-size:50px;
+        top: 8%;
+    }
+    
+    #about .txt{
+        Font-size:15px;
+        top: 18%;
+    }
+
+    .par_icon{
+        height: 184.02px;
+        width: 144.541px;
+      }
+      
+    .par_icon_2{
+        height: 184.02px;
+        width: 144.541px;
+      }
+
+  }
+
+  @media only screen and (max-width: 600px) {
+        
+    #about .heading{
+        Font-size:50px;
+        top: 10%;
+    }
+    
+    #about .txt{
+        Font-size:12px;
+        top: 22%;
+        width:70%;
+    }
+
+    .par_icon{
+        height: 92.01px;
+        width: 72.3px;
+      }
+      
+    .par_icon_2{
+        height: 92.01px;
+        width: 72.3px;
+      }
+
+
+}
+
+  @media only screen and (max-width: 380px) {
+  
+    #about .heading{
+        Font-size:40px;
+        top: 10%;
+    }
+    
+    #about .txt{
+        Font-size:10px;
+        top: 22%;
+        width:70%;
+    }
+
+    .par_icon{
+        height: 92.01px;
+        width: 72.3px;
+      }
+      
+    .par_icon_2{
+        height: 92.01px;
+        width: 72.3px;
+      }
+
+}
+

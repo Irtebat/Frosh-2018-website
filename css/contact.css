@@ -1,0 +1,52 @@
+#contact{
+    background-color:#fff;
+    overflow: hidden;
+    height:70%;
+}
+
+#contact .heading{
+    position: absolute;
+    Font-size:60px;
+    text-align:center;
+    top:12%;
+    font-weight: 500;
+    font-family: 'Righteous', cursive;
+    color:#fb6e14;
+    transition: all 1.5s ease;
+}
+
+@media only screen and (max-width: 1400px) {
+
+    #contact .heading{
+        Font-size:65px;
+        top: 12%;
+    }
+    
+  }
+
+  @media only screen and (max-width: 1000px) {
+
+    #contact .heading{
+        Font-size:50px;
+        top: 8%;
+    }
+
+  }
+
+  @media only screen and (max-width: 600px) {
+        
+    #contact .heading{
+        Font-size:50px;
+        top: 10%;
+    }
+
+}
+
+  @media only screen and (max-width: 380px) {
+  
+    #contact .heading{
+        Font-size:40px;
+        top: 10%;
+    }
+
+}

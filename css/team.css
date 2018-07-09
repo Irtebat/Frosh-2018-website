@@ -1,0 +1,232 @@
+#team{
+    background-color:#fff;
+    overflow: hidden;
+    height:90%;
+}
+
+#team .heading{
+    position: absolute;
+    Font-size:70px;
+    text-align:center;
+    top: 10%;
+    font-family: 'Righteous', cursive;
+    color:#000;
+    transition: all 1.5s ease;
+}
+
+/* Flex Box for Our Identity Section */
+
+.v_container_t{
+    overflow: hidden;
+    position: absolute;
+    top:30%;
+    width:1500px;
+    text-align: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 6;
+}
+
+.showing{
+    opacity:0.6;
+    transform: translate(0,0);
+}
+
+.vbox_t{
+    height: 100%;
+    width:400px;
+    padding: 0 2%;
+    margin:20px 0;
+    color:black;
+    opacity:0;
+    transform: translate(-100%,0) rotate(30deg) ;
+    transition: all 1s ease;
+    font-weight:0;
+}
+
+.vbox_t img{
+    height:150x;
+    width:150px;
+}
+
+/* Vbox Heading  and text*/
+
+.vbox_text{
+    font-family: 'Hind Guntur', sans-serif;
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.vbox_head{
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 40px;
+    font-size: 45px;
+    margin-bottom: 5px;
+}
+ 
+/* Cover */
+
+.vbox_m_t{
+    height: 100%;
+    width:400px;
+    margin:0px 0;
+    color:white;
+    transform: translate(0,0) rotate(0deg) ;
+    transition: all 0.5s ease;
+}
+
+.v_container_m_t{
+    position: absolute;
+    width:100%;
+    text-align: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    top:0%;
+    height:100%;
+    z-index: 7;
+    background-color:none;
+}
+
+#exp_c{
+    background-color:none;
+}
+#pas_c{
+    background-color:none;
+}
+#amb_c{
+    background-color:none;
+}
+
+/* Vbox hover Overlay Properties */
+
+#exp_c:hover {
+    background-color:rgba(41,160,236,0.08);
+}
+#pas_c:hover {
+    background-color:rgba(41,160,236,0.08);
+}
+#amb_c:hover {
+    background-color:rgba(41,160,236,0.08);
+}
+
+/* Hyperlink */
+
+.team_a{
+    height: 100%;;
+}
+
+@media only screen and (max-width: 1400px) {
+
+    #team .heading{
+        Font-size:65px;
+        top: 12%;
+    }
+    .vbox_t{
+        width:400px;
+    }
+    .vbox_m_t{
+        width:400px;
+    }
+
+  }
+
+  @media only screen and (max-width: 1200px) {
+
+    #team .heading{
+        Font-size:50px;
+        top: 8%;
+    }
+
+    .vbox_t{
+        width:300px;
+    }
+    .vbox_m_t{
+        width:300px;
+    }
+
+
+}
+
+  @media only screen and (max-width: 600px) {
+        
+    #team{
+        height:200%;
+    }
+    #team .heading{
+        Font-size:50px;
+        top: 5%;
+    }
+    .v_container_t{
+        overflow: hidden;
+        position: absolute;
+        top:13%;
+        width:400px;
+    }
+    .vbox_t{
+        margin:25px 0;
+        height:350px;
+        width:380px;
+    }
+    .vbox_m_t{
+        height:350px;
+        width:380px;
+    }
+
+    .vbox_text{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    
+    .vbox_head{
+        margin-top: 35px;
+        font-size: 45px;
+        margin-bottom: 5px;
+    }
+    
+}
+
+  @media only screen and (max-width: 380px) {
+  
+    #team .heading{
+        Font-size:40px;
+        top: 5%;
+    }
+    #team{
+        height:210%;
+    }
+
+    .v_container_t{
+        overflow: hidden;
+        position: absolute;
+        top:13%;
+        width:350px;
+    }
+    .vbox_t{
+        margin:15px 0;
+        height:350px;
+        width:300px;
+    }
+    .vbox_m_t{
+        height:350px;
+        width:300px;
+    }
+    .vbox_text{
+        margin-top: 15px;
+        font-size: 17px;
+    }
+    
+    .vbox_head{
+        margin-top: 20px;
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+}

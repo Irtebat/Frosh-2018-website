@@ -1,0 +1,253 @@
+#vision{
+    background-color:#000;
+    overflow: hidden;
+}
+
+#vision .heading{
+    position: absolute;
+    Font-size:60px;
+    text-align:center;
+    top:12%;
+    font-weight: 500;
+    font-family: 'Righteous', cursive;
+    color:#000;
+    transition: all 1.5s ease;
+}
+/* Flex Box for Our Identity Section */
+
+.v_container{
+    overflow: hidden;
+    position: absolute;
+    top:30%;
+    width:1500px;
+    text-align: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 6;
+}
+
+.showing{
+    opacity:0.6;
+    transform: translate(0,0);
+}
+
+.vbox{
+    height: 100%;
+    width:400px;
+    padding: 0 2%;
+    margin:50px 0;
+    color:black;
+    opacity:0;
+    transform: translate(-100%,0) rotate(30deg) ;
+    transition: all 1s ease;
+    font-weight:0;
+}
+
+.vbox img{
+    height:150x;
+    width:150px;
+}
+
+/* Vbox Heading  and text*/
+
+.vbox_text{
+    font-family: 'Hind Guntur', sans-serif;
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.vbox_head{
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 40px;
+    font-size: 45px;
+    margin-bottom: 5px;
+}
+ 
+/* Cover */
+
+.vbox_m{
+    height: 100%;
+    width:400px;
+    margin:50px 0;
+    color:white;
+    transform: translate(0,0) rotate(0deg) ;
+    transition: all 0.5s ease;
+}
+
+.v_container_m{
+    position: absolute;
+    width:100%;
+    text-align: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    top:0%;
+    height:100%;
+    z-index: 7;
+    background-color:none;
+}
+
+#exp_c{
+    background-color:none;
+}
+#pas_c{
+    background-color:none;
+}
+#amb_c{
+    background-color:none;
+}
+
+/* Vbox hover Overlay Properties */
+
+#exp_c:hover {
+    background-color:rgba(41,160,236,0.08);
+}
+#pas_c:hover {
+    background-color:rgba(41,160,236,0.08);
+}
+#amb_c:hover {
+    background-color:rgba(41,160,236,0.08);
+}
+
+
+/* Vbox hover properties */
+/*
+#amb:hover .amb_head{
+    color:#29a0ec;
+}
+
+#amb:hover {
+    opacity:1;
+}
+
+#pas:hover .pas_head{
+    color:#29a0ec;
+}
+
+#pas:hover {
+    opacity:1;
+}
+
+#exp:hover .exp_head{
+    color:#29a0ec;
+}
+
+#exp:hover {
+    opacity:1;
+}
+*/
+
+@media only screen and (max-width: 1400px) {
+
+    #vision .heading{
+        Font-size:65px;
+        top: 12%;
+    }
+    .vbox{
+        width:400px;
+    }
+    .vbox_m{
+        width:400px;
+    }
+
+  }
+
+  @media only screen and (max-width: 1200px) {
+
+    #vision .heading{
+        Font-size:50px;
+        top: 8%;
+    }
+
+    .vbox{
+        width:300px;
+    }
+    .vbox_m{
+        width:300px;
+    }
+
+
+}
+
+  @media only screen and (max-width: 600px) {
+        
+    #vision{
+        height:200%;
+    }
+    #vision .heading{
+        Font-size:55px;
+        top: 5%;
+    }
+    .v_container{
+        overflow: hidden;
+        position: absolute;
+        top:13%;
+        width:380px;
+    }
+    .vbox{
+        margin:25px 0;
+        height:350px;
+        width:400px;
+    }
+    .vbox_m{
+        height:350px;
+        width:400px;
+    }
+
+    .vbox_text{
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    
+    .vbox_head{
+        margin-top: 35px;
+        font-size: 40px;
+        margin-bottom: 5px;
+    }
+    
+}
+
+  @media only screen and (max-width: 380px) {
+  
+    #vision .heading{
+        Font-size:45px;
+        top: 5%;
+    }
+    #vision{
+        height:210%;
+    }
+
+    .v_container{
+        overflow: hidden;
+        position: absolute;
+        top:13%;
+        width:350px;
+    }
+    .vbox{
+        margin:15px 0;
+        height:350px;
+        width:350px;
+    }
+    .vbox_m{
+        height:350px;
+        width:350px;
+    }
+    .vbox_text{
+        margin-top: 15px;
+        font-size: 14px;
+    }
+    
+    .vbox_head{
+        margin-top: 15px;
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+}

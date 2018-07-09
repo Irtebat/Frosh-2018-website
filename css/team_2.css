@@ -1,0 +1,92 @@
+body{
+    background-image: url(../img/background/light-grey-terrazzo.png);
+    height:100%;
+    width:100%;
+    font-size:25px;
+    color:black;
+}
+
+.row{
+    position: relative;
+    top:15%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+  
+.m_fig{
+
+   /* opacity: 0;
+    transform:translateX(100px); */
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    height:370px;
+    width: 250px;
+    margin:30px;
+    border:0.5px solid #ccc;
+  }
+
+.holder{
+    position: absolute;
+    top:0%;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+
+.cover{
+    z-index:1;
+    position: absolute;
+    top:10px;
+    overflow:hidden;
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+    filter:grayscale(0.4);
+}
+
+.text{
+    text-align: center;
+    z-index: 100;
+    position: absolute;
+    width:230px;
+    bottom:10px;
+    height:25%;
+/*   
+    left:-100%;
+    opacity: 0; 
+*/
+    background-color: white;
+    font-size: 20px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    transition: all 0.3s ease-in;
+}
+
+
+.cover:hover{
+    filter:grayscale(0);
+    z-index: 10;
+    border-radius: 0%;
+    height: 350px;
+    width: 230px;
+}
+
+.cover:hover + .text{
+    z-index: 100;
+    width:230px;
+    left:4%;
+    opacity: 0.9;
+}

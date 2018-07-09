@@ -1,0 +1,70 @@
+/* Cover Page */
+
+#cover{
+    height: 100%;
+    width:100%;
+    position: fixed;
+  }
+  
+#img{
+  position: absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  z-index:2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter:grayscale(0%);
+}
+
+#shadow{
+  position: absolute;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  background-color: black;
+  opacity: 0.8;
+}
+  
+/* Cover frosh logo */
+
+#logo{
+  position: fixed;
+  top:25%;
+  left:33%;
+  max-width: 50%;
+  height: auto;
+  background-size:contain;
+  z-index: 100;
+}
+
+@media only screen and (max-width: 800px) {
+
+  #logo{
+    max-width: 50%;
+    top:30%;
+    left:25%;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+
+  #logo{
+      max-width: 15%;
+      top:30%;
+      left:43%;
+    }
+
+  }
+@media only screen and (max-width: 500px) {
+
+    #logo{
+      max-width: 65%;
+      top:30%;
+      left:18%;
+    }
+
+  }

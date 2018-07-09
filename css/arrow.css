@@ -1,0 +1,67 @@
+/* Arrow */
+
+.slider {
+    z-index:100;
+    width: 60px;
+    height: 82px;
+    position: fixed;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 20px;
+    opacity: 1;
+    transition: opacity 2s ease-in;
+}
+
+a:focus .slider{
+    background-color: none;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .slider {
+        position: fixed;
+        bottom:7%;
+    }
+}
+
+
+.slider:hover{
+    cursor: pointer;
+}
+
+.arrow path {
+	stroke:white;
+	fill: transparent;
+	stroke-width: 3px;
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow{
+0% {opacity:0}
+25% {opacity:1}
+75% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow{
+0% {opacity:0}
+25% {opacity:1}
+75% {opacity:0}
+100% {opacity:0}
+}
+
+.arrow path.a1{
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s;
+}
+
+.arrow path.a2{
+	animation-delay:-.5s;
+	-webkit-animation-delay:-.5s;
+}
+
+.arrow path.a3{
+	animation-delay:0s;
+	-webkit-animation-delay:0s;
+}
